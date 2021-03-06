@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Optional styles and scripts of your own -->
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #Instructor_image {
+            margin: auto;
+            height: 100px;
+            width: 140px;
+        }
+
+        #personal_info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #assignment_buttons {
+            text-align: center;
+            width: auto;
+            height: auto;
+        }
+    </style>
 
 
 </head>
@@ -46,10 +68,33 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">BCIT Shared Calendar</a>
         </div>
+
     </nav>
 
     <h1>Welcome ! Instructor</h1>
-    <p>Assignments to be added here</p>
+
+    <div id="Instructor_image">
+        <img id="Instructor_image" src=christopher-campbell-rDEOVtE7vOs-unsplash.jpg>
+    </div>
+
+    <div id="personal_info">
+        <h2>Personal Information</h2>
+        <p> Classes : 1510, 2510, 1110</p>
+        <p>Time : 8: 30 - 12: 30</p>
+        <p>Days : Tuesday, Friday</p>
+    </div>
+
+    <div id="assignment_buttons">
+        <br>
+        <button id="Add" type="button" class="btn btn-dark">Add Assignments</button>
+        <br>
+        <br>
+        <button id="Edit" type="button" class="btn btn-secondary">Edit/Delete Assignments</button>
+
+
+    </div>
+
+    <p></p>
     <nav class="navbar fixed-bottom navbar-dark bg-warning">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Instructor's portal</a>
@@ -71,6 +116,14 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
+    <script>
+        welcome_prompt = alert("Welcome Instructor");
+    </script>
+    <script>
+        document.getElementById("Add").onclick = function () {
+            window.location.href = "add_assignments.html"
+        };
+    </script>
 
 </body>
 
