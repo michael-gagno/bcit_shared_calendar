@@ -44,13 +44,16 @@
 
         .col-10 {
             padding-left: 0px;
+            margin-bottom: 10px;
         }
 
         #submit{
+            position:  relative;
             margin-top: 30px;
             text-align: center;
             width: auto;
             height: auto;
+            margin-bottom: auto;
         }
 
     </style>
@@ -128,16 +131,13 @@
             <input class="form-control" type="datetime-local" value="" id="date_time_picker">
         </div>
 
-        <div id = "submit">
-            <button type="button" class="btn btn-secondary">Submit</button>
-
-        </div>
-
+    <div id = "submit">
+        <button id = "submit_button"type="button" class="btn btn-secondary">Submit</button>
+    </div>
 
 
 
 
-        <p></p>
         <nav class="navbar fixed-bottom navbar-dark bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Instructor's portal</a>
@@ -159,6 +159,11 @@
         <!--------------------------------------------------------------------->
         <!-- JS files: Your own JavaScript functions included here    -->
         <!--------------------------------------------------------------------->
+        <script>
+            document.getElementById("submit_button").onclick = function () {
+                window.location.href = "add_note.html"
+            };
+        </script>
 
 
 </body>
