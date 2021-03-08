@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>add_assignments</title>
+    <title>add_a_note</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -13,48 +13,30 @@
 
     <!-- Optional styles and scripts of your own -->
     <style>
-        h1 {
+        h1{
             text-align: center;
-            margin-bottom: 10px;
         }
 
-        .textfield_inputs {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 10px;
+        #successful_submission{
+            border: 2px solid black;
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
         }
 
-        .combo_boxes {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 10px;
-        }
-
-        .text_area {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 10px;
-        }
-
-        .date_picker {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 10px;
-        }
-
-        .col-10 {
-            padding-left: 0px;
-            margin-bottom: 10px;
-        }
-
-        #submit{
-            position:  relative;
-            margin-top: 30px;
+        #upload_prompt{
             text-align: center;
-            width: auto;
-            height: auto;
-            margin-bottom: auto;
+            color: green;
+            font-size:xx-large;
+            font-weight: 500;
         }
+
+        #link{
+            float: right;
+            margin-right: 30px;
+        }
+
+        
 
     </style>
 
@@ -74,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="calendar.html">View Calendar</a>
+                    <a class="nav-link" href="calendar_monthly.html">View Calendar</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="assignment_list.html">Assignment List</a>
@@ -86,7 +68,7 @@
                     <a class="nav-link" href="admin.html">Add Set</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="add_assignments.html">Add Event</a>
+                    <a class="nav-link" href="add_event.html">Add Event</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="settings.html">Settings</a>
@@ -109,53 +91,14 @@
     </nav>
 
     <h1>Add Assignments</h1>
-    <div class="textfield_inputs">
-        <label for="">Name of Assignment</label>
-        <input type="name" class="form-control" id="name_of_assignment" aria-describedby="nameHelp"
-            placeholder="Enter the name of the assignment">
+
+    <div id="successful_submission">
+        <p id="upload_prompt">Assignment Uploaded Successfully</p>
     </div>
-
-    <div class="combo_boxes">
-        <label for="Course Selection">Select a course</label>
-        <select class="form-control" id="select_course">
-            <option>COMP 1510</option>
-            <option>COMP 2510</option>
-            <option>COMP 2456</option>
-        </select>
-
-        <label for="Set Selection">Select a Set</label>
-        <select multiple class="form-control" id="select_set">
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-            <option>D</option>
-            <option>E</option>
-            <option>F</option>
-
-        </select>
+    
+    <div id="link">
+    <a href="admin.html"> <u>Return to homepage</u></a>
     </div>
-
-    <div class="text_area">
-        <label for="url">Enter the link to external resource</label>
-        <textarea class="form-control" id="url" rows="3"></textarea>
-    </div>
-
-    <div class="date_picker">
-        <label for="date and time picker" class="date_time">Date and time</label>
-        <div class="col-10">
-            <input class="form-control" type="datetime-local" value="" id="date_time_picker">
-        </div>
-
-    <div id = "submit">
-        <button id = "submit_button"type="button" class="btn btn-secondary">Submit</button>
-    </div>
-
-        
-        
-
-
-
-
         <nav class="navbar fixed-bottom navbar-dark bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Instructor's portal</a>
@@ -177,14 +120,8 @@
         <!--------------------------------------------------------------------->
         <!-- JS files: Your own JavaScript functions included here    -->
         <!--------------------------------------------------------------------->
-        <script>
-            document.getElementById("submit_button").onclick = function () {
-                window.location.href = "add_note.html"
-            };
-        </script>
+
 
 
 </body>
-
-
 </html>
