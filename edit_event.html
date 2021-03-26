@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>add_assignments</title>
+    <meta name="comp1800 boilerplate code" content="my bcit project">
+    <meta name="author" content="BCIT">
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="./firebase-config.js"></script>
+    <script src="scripts/edit_events.js"></script>
+
+
+    <!-- Optional styles and scripts of your own -->
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .textfield_inputs {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        .combo_boxes {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        .text_area {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        .date_picker {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        .col-10 {
+            padding-left: 0px;
+            margin-bottom: 10px;
+        }
+
+        #edit_btn{
+            position:  relative;
+            margin-top: 30px;
+            text-align: center;
+            width: auto;
+            height: auto;
+            margin-bottom: auto;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-------------------------------------->
+    <!-- The following is HTML for layout -->
+    <!-------------------------------------->
+    <!-- Header Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="">BCIT Shared Calendar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar_monthly.html">View Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assignment_list.html">Assignment List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="change_set.html">Change Set</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Add Set</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account.html">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BCIT Shared Calendar</a>
+        </div>
+
+    </nav>
+
+    <h1>Edit/ Delete Assignments</h1>
+    <div class="textfield_inputs">
+        <label for="">Name of Assignment</label>
+        <input type="name" class="form-control" id="name_of_assignment" aria-describedby="nameHelp"
+            placeholder="Enter the name of the assignment">
+    </div>
+
+
+    <div id = "edit_btn">
+        <button id = "submit_button"type="button" class="btn btn-secondary">Edit</button>
+    </div>
+
+
+        
+        
+
+
+
+
+        <nav class="navbar fixed-bottom navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Instructor's portal</a>
+            </div>
+        </nav>
+        <!----------------------------------------------->
+        <!-- JS: Boostrap, Firebase, API related    -->
+        <!----------------------------------------------->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+            </script>
+
+        <!--------------------------------------------------------------------->
+        <!-- JS files: Your own JavaScript functions included here    -->
+        <!--------------------------------------------------------------------->
+        <script src="scripts/edit_events.js"></script>
+        
+
+
+</body>
+
+
+</html>
