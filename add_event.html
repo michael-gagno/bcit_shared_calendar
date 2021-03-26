@@ -10,8 +10,6 @@
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-    <script src="./firebase-config.js"></script>
 
     <!-- Optional styles and scripts of your own -->
     <style>
@@ -88,6 +86,9 @@
                     <a class="nav-link" href="admin.html">Add Set</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="add_event.html">Add Event</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="settings.html">Settings</a>
                 </li>
                 <li class="nav-item">
@@ -107,10 +108,10 @@
 
     </nav>
 
-    <h1>Add Assignments</h1>
+    <h1>Add Event</h1>
     <div class="textfield_inputs">
         <label for="">Name of Assignment</label>
-        <input type="name" class="form-control" id="name_of_assignment" aria-describedby="nameHelp"
+        <input type="name" class="form-control" id="event_name" aria-describedby="nameHelp"
             placeholder="Enter the name of the assignment">
     </div>
 
@@ -143,10 +144,10 @@
         <label for="date and time picker" class="date_time">Date and time</label>
         <div class="col-10">
             <input class="form-control" type="datetime-local" value="" id="date_time_picker">
-        </div>
+    </div>
 
     <div id = "submit">
-        <button id = "submit_button"type="button" class="btn btn-secondary">Submit</button>
+        <button id = "submit_event" type="button" class="btn btn-secondary">Submit</button>
     </div>
 
         
@@ -157,7 +158,7 @@
 
         <nav class="navbar fixed-bottom navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Instructor's portal</a>
+                <a class="navbar-brand" href="#">Admin portal</a>
             </div>
         </nav>
         <!----------------------------------------------->
@@ -177,9 +178,7 @@
         <!-- JS files: Your own JavaScript functions included here    -->
         <!--------------------------------------------------------------------->
         <script src="scripts/add_events.js"></script>
-        
-
-
+        <!-- This is a test commit -->
 </body>
 
 
