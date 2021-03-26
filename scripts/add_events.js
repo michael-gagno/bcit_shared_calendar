@@ -29,7 +29,3 @@ submit.addEventListener('click', function(event){
 })
 
 // It is a test comment
-
-
-
-
