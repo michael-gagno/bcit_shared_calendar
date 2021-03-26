@@ -10,9 +10,20 @@
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="./firebase-config.js"></script>
+    
     <!-- Optional styles and scripts of your own -->
+     <style>
+         .assign_list{
+             text-align: left;
+             margin-left: 30px;
+         }
 
+         .data_list{
+             text-align: left;
+         }
+     </style>
 
 </head>
 
@@ -55,16 +66,9 @@
     </nav>
     <div class="container">
         <h1>Upcoming Assignments (Set E)</h1>
-        <h3>Thursday, Feb 18</h3>
-        <ul>
-            <li>COMP 1510 Lab Due</li>
-            <li>COMP 1510 A3 Part 1</li>
-        </ul>
-        <h3>Friday, Feb 19</h3>
-        <ul>
-            <li>COMP 9999 Assignment Due (50 pages)</li>
-            <li>MATH 9999 Exam</li>
-        </ul>
+    </div>
+    <div class="assign_list">
+        <ul id="list"></ul>
     </div>
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
@@ -87,6 +91,7 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
+    <script src="./scripts/assignment_list.js"></script>
 
 </body>
 
