@@ -10,8 +10,6 @@
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-    <script src="./firebase-config.js"></script>
 
     <!-- Optional styles and scripts of your own -->
     <style>
@@ -86,6 +84,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin.html">Add Set</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add_event.html">Add Event</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="settings.html">Settings</a>
@@ -176,17 +177,8 @@
         <!--------------------------------------------------------------------->
         <!-- JS files: Your own JavaScript functions included here    -->
         <!--------------------------------------------------------------------->
-<<<<<<< HEAD
         <script>
             document.getElementById("submit_event").onclick = function () {
-                var calendar_event = db.collection("event")
-                calendar_event.add({
-                    name: document.getElementbyId("event_name"),
-                    class: document.getElementbyID("select_course"),
-                    set: document.getElementById("select_set"),
-                    link: document.getElementById("url"),
-                    due_date: document.getElementById("date_time_picker"),
-                })    
                 window.location.href = "add_note.html"
             };
             document.getElementById("submit_event").addEventListener("click", function addEvent() {
@@ -200,12 +192,6 @@
                 })
             })
         </script>
-=======
-        <script src="scripts/add_events.js"></script>
-        
-
-
->>>>>>> 836c71e295ab1c6e1dc8b4009af4b86e486b55c7
 </body>
 
 
