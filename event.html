@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Optional styles and scripts of your own -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="./firebase-config.js"></script>
 
 </head>
@@ -57,16 +58,12 @@
     <div class="container-fluid">
         <h4>Event details</h4>
         <hr>
-        <h3 id="event-name">COMP 2456 - Assignment 2</h3>
-        <p id="event-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nam eum error non quos ullam soluta explicabo porro similique adipisci cum, repellat neque officiis corrupti quas facilis libero et! Adipisci.</p>
+        <h3 id="event-name"></h3>
+        <p id="event-description"></p>
         <br>
-        <h5 id="event-due">Due: 2021-04-11 11:35 PM</h5>
+        <h5 id="event-due"></h5>
         <hr>
-        <ul id="event-links">
-            <li><a href="placeholder">Various links</a></li>
-            <li><a href="placeholder">Various links</a></li>
-            <li><a href="placeholder">Various links</a></li>
-        </ul>
+        <ul id="event-links"></ul>
         <br>
         <button type="button" class="btn btn-primary" id="event-button">Set to Complete</button>
     </div>
@@ -87,7 +84,7 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-
+    <script src="./scripts/event.js"></script>
 </body>
 
 </html>
