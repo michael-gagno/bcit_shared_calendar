@@ -38,6 +38,12 @@
             margin-bottom: 10px;
         }
 
+        .text_area_description {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
         .date_picker {
             margin-left: 100px;
             margin-right: 100px;
@@ -51,11 +57,17 @@
 
         #submit{
             position:  relative;
-            margin-top: 30px;
+            margin-top: 10px;
             text-align: center;
             width: auto;
             height: auto;
             margin-bottom: auto;
+        }
+
+        .check_boxes {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
         }
 
     </style>
@@ -121,22 +133,46 @@
             <option>COMP 2510</option>
             <option>COMP 2456</option>
         </select>
+    </div>
 
-        <label for="Set Selection">Select a Set</label>
-        <select multiple class="form-control" id="select_set">
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-            <option>D</option>
-            <option>E</option>
-            <option>F</option>
+    <div class="check_boxes">
+        <label for="set_selection">Select Set(s)</label>
+        <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="A">
+            <label class="form-check-label" for="inlineCheckbox1">A</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="B">
+            <label class="form-check-label" for="inlineCheckbox2">B</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="C">
+            <label class="form-check-label" for="inlineCheckbox2">C</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="D">
+            <label class="form-check-label" for="inlineCheckbox2">D</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="E">
+            <label class="form-check-label" for="inlineCheckbox2">E</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="F">
+            <label class="form-check-label" for="inlineCheckbox2">F</label>
+          </div>
 
-        </select>
     </div>
 
     <div class="text_area">
         <label for="url">Enter the link to external resource</label>
         <textarea class="form-control" id="url" rows="3"></textarea>
+    </div>
+
+    <div class="text_area_description">
+        <label for="url">Enter description</label>
+        <textarea class="form-control" id="desc" rows="3"></textarea>
     </div>
 
     <div class="date_picker">
