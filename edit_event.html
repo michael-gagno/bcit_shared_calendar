@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="./firebase-config.js"></script>
-    <script src="scripts/edit_events.js"></script>
-
 
     <!-- Optional styles and scripts of your own -->
     <style>
@@ -51,13 +49,10 @@
             margin-bottom: 10px;
         }
 
-        #edit_btn{
-            position:  relative;
-            margin-top: 30px;
-            text-align: center;
-            width: auto;
-            height: auto;
-            margin-bottom: auto;
+        #delete{
+            
+            float:left;
+            margin-top: 2px;
         }
 
     </style>
@@ -109,18 +104,51 @@
 
     </nav>
 
-    <h1>Edit/ Delete Assignments</h1>
+    <h1>Add Assignments</h1>
     <div class="textfield_inputs">
         <label for="">Name of Assignment</label>
         <input type="name" class="form-control" id="name_of_assignment" aria-describedby="nameHelp"
             placeholder="Enter the name of the assignment">
     </div>
 
+    <div class="combo_boxes">
+        <label for="Course Selection">Select a course</label>
+        <select class="form-control" id="select_course">
+            <option>COMP 1510</option>
+            <option>COMP 2510</option>
+            <option>COMP 2456</option>
+        </select>
 
-    <div id = "edit_btn">
-        <button id = "submit_button"type="button" class="btn btn-secondary">Edit</button>
+        <label for="Set Selection">Select a Set</label>
+        <select multiple class="form-control" id="select_set">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+
+        </select>
     </div>
 
+    <div class="text_area">
+        <label for="url">Enter the link to external resource</label>
+        <textarea class="form-control" id="url" rows="3"></textarea>
+    </div>
+
+    <div class="date_picker">
+        <label for="date and time picker" class="date_time">Date and time</label>
+        <div class="col-10">
+            <input class="form-control" type="datetime-local" value="" id="date_time_picker">
+        </div>
+
+    <div id = "update">
+        <button id = "Update_button"type="button" class="btn btn-secondary">Update</button>
+    </div>
+
+    <div id="delete">
+        <button id = "delete_button"type="button" class="btn btn-secondary">Delete</button>
+    </div>
 
         
         
@@ -157,4 +185,3 @@
 
 
 </html>
-
