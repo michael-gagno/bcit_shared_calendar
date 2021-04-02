@@ -14,6 +14,7 @@
     <!-- Optional styles and scripts of your own -->
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="./firebase-config.js"></script>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -65,8 +66,10 @@
         <hr>
         <a id="event-url"><div id="event-links"></div></a>
         <br>
-        <button type="button" class="btn btn-primary" id="event-button">Set to Complete</button>
+        <button type="button" class="btn btn-primary" id="event-set-complete">Set to Complete</button>
+        <button type="button" class="btn btn-danger" id="event-set-incomplete">Set to Incomplete</button>
     </div>
+    </nav>
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->

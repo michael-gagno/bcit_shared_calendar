@@ -1,5 +1,7 @@
 let params = (new URL(document.location)).searchParams;
 let eventId = params.get("event");
+let storage = window.localStorage;
+
 
 function showEventDetails(eventId) {
     let eventInfo = db.collection("events").doc(eventId);
@@ -28,6 +30,17 @@ function showEventDetails(eventId) {
             let eventLinksText = document.createTextNode(doc.data().link);
             eventLinks.appendChild(eventLinksText);
             eventAnchor.href = doc.data().link
+
+            let btnComplete = document.getElementById('event-set-complete');
+            let btnIncomplete = document.getElementById('event-set-incomplete');
+            btnComplete.addEventListener('click', function(event){
+                btnComplete.style.display = 'none';
+                btnIncomplete.style.display = 'block';
+            });
+            btnIncomplete.addEventListener('click', function(event){
+                btnComplete.style.display = 'block';
+                btnIncomplete.style.display = 'none';
+            });
         } else {
             console.log("No such document!");
         }
