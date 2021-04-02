@@ -14,6 +14,7 @@
     <!-- Optional styles and scripts of your own -->
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <script src="./firebase-config.js"></script>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -55,18 +56,20 @@
         </div>
     </nav>
     <br>
-    <div class="container-fluid">
+    <div class="container-fluid" id="event-container">
         <h4>Event details</h4>
         <hr>
-        <h3><span id="event-name-course"></span> - <span id="event-name"></span></h3>
+        <h3><span id="event-name-course"></span> - <span id="event-name"></span> <span id="event-completed">[COMPLETED]</span></h3>
         <p id="event-description"></p>
         <br>
         <h5 id="event-due">Due: </h5>
         <hr>
         <a id="event-url"><div id="event-links"></div></a>
         <br>
-        <button type="button" class="btn btn-primary" id="event-button">Set to Complete</button>
+        <button type="button" class="btn btn-primary" id="event-set-complete">Set to Complete</button>
+        <button type="button" class="btn btn-danger" id="event-set-incomplete">Set to Incomplete</button>
     </div>
+    </nav>
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->

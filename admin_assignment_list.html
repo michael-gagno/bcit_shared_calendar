@@ -14,16 +14,21 @@
     <script src="./firebase-config.js"></script>
     
     <!-- Optional styles and scripts of your own -->
-     <style>
-         .assign_list{
-             text-align: left;
-             margin-left: 30px;
-         }
-
-         .data_list{
-             text-align: left;
-         }
-     </style>
+    <link href="styles/admin_assignment_list.css">
+    <style>
+        .assign_list {
+            text-align: left;
+            margin-left: 30px;
+    
+        }
+    
+        .data_list {
+            text-align: left;
+        }
+        .assign_list ol:hover{
+            background-color: rgb(220, 221, 221);
+        }
+    </style>
 
 </head>
 
@@ -65,12 +70,9 @@
         </div>
     </nav>
     <div class="container">
-        <h1>Upcoming Assignments (Set E)</h1>
+        <h1>Assignments Posted</h1>
     </div>
     <div class="assign_list">
-        <!--<ul class="inner_list">
-            <ol class="values"></ol>
-        </ul> -->
     </div>
     <nav class="navbar fixed-bottom navbar-light bg-light">
         <div class="container-fluid">
@@ -93,7 +95,7 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="./scripts/assignment_list.js"></script>
+    <script src="./scripts/admin_assignment_list.js"></script>
 
 </body>
 
