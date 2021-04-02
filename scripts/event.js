@@ -30,15 +30,23 @@ function showEventDetails(eventId) {
 
             let eventLinksText = document.createTextNode(doc.data().link);
             eventLinks.appendChild(eventLinksText);
-            eventAnchor.href = doc.data().link
+            eventAnchor.href = doc.data().link;
 
             let btnComplete = document.getElementById('event-set-complete');
             let btnIncomplete = document.getElementById('event-set-incomplete');
+
+            if (storage.getItem(eventId)) { 
+                btnComplete.style.display = 'none';
+                btnIncomplete.style.display = 'block';
+            }
+
             btnComplete.addEventListener('click', function(event){
+                storage.setItem(eventId, 'complete');
                 btnComplete.style.display = 'none';
                 btnIncomplete.style.display = 'block';
             });
             btnIncomplete.addEventListener('click', function(event){
+                storage.removeItem(eventId);
                 btnComplete.style.display = 'block';
                 btnIncomplete.style.display = 'none';
             });
