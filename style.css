@@ -10,3 +10,7 @@ button#event-set-complete {
 button#event-set-incomplete {
     display: none;
 }
+
+#event-container {
+    display: none;
+}

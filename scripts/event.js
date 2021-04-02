@@ -50,9 +50,10 @@ function showEventDetails(eventId) {
                 btnComplete.style.display = 'block';
                 btnIncomplete.style.display = 'none';
             });
+
+            document.getElementById('event-container').style.display = 'block';
         } else {
             console.log("No such document!");
-            document.getElementById('event-container').style.display = 'none';
         }
     }).catch((error) => {
         console.log("Error getting document:", error);
