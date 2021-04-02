@@ -38,6 +38,12 @@
             margin-bottom: 10px;
         }
 
+        .text_area_description {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
         .date_picker {
             margin-left: 100px;
             margin-right: 100px;
@@ -49,10 +55,15 @@
             margin-bottom: 10px;
         }
 
-        #delete{
-            
-            float:left;
-            margin-top: 2px;
+
+        .check_boxes {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 10px;
+        }
+
+        #btns{
+            text-align: center;
         }
 
     </style>
@@ -97,14 +108,10 @@
         </div>
     </nav>
 
-    <nav class="navbar fixed-bottom navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">BCIT Shared Calendar</a>
-        </div>
 
     </nav>
 
-    <h1>Add Assignments</h1>
+    <h1>Edit/Delete Assignments</h1>
     <div class="textfield_inputs">
         <label for="">Name of Assignment</label>
         <input type="name" class="form-control" id="name_of_assignment" aria-describedby="nameHelp"
@@ -118,27 +125,46 @@
             <option>COMP 2510</option>
             <option>COMP 2456</option>
         </select>
-
-        <label for="Set Selection">Select a Set</label>
-        <select multiple class="form-control" id="select_set">
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-            <option>D</option>
-            <option>E</option>
-            <option>F</option>
-
-        </select>
     </div>
 
-<<<<<<< HEAD
+    <div class="check_boxes">
+        <label for="set_selection">Select Set(s)</label>
+        <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="A">
+            <label class="form-check-label" for="inlineCheckbox1">A</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="B">
+            <label class="form-check-label" for="inlineCheckbox2">B</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="C">
+            <label class="form-check-label" for="inlineCheckbox2">C</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="D">
+            <label class="form-check-label" for="inlineCheckbox2">D</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="E">
+            <label class="form-check-label" for="inlineCheckbox2">E</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="F">
+            <label class="form-check-label" for="inlineCheckbox2">F</label>
+          </div>
+
+    </div>
+
     <div class="text_area">
         <label for="url">Enter the link to external resource</label>
         <textarea class="form-control" id="url" rows="3"></textarea>
-=======
-    <div id = "edit_btn">
-        <button id="submit_button" type="button" class="btn btn-secondary">Edit</button>
->>>>>>> f34776de77541d617f164a490560ae91034a05be
+    </div>
+
+    <div class="text_area_description">
+        <label for="url">Enter description</label>
+        <textarea class="form-control" id="desc" rows="3"></textarea>
     </div>
 
     <div class="date_picker">
@@ -146,26 +172,14 @@
         <div class="col-10">
             <input class="form-control" type="datetime-local" value="" id="date_time_picker">
         </div>
-
-    <div id = "update">
-        <button id = "Update_button"type="button" class="btn btn-secondary">Update</button>
     </div>
+    
+    <div id="btns">
+        <button id="Edit_button" type="button" class="btn btn-secondary">Edit</button>
+        <button id="Delete_button" type="button" class="btn btn-secondary">Delete</button>
 
-    <div id="delete">
-        <button id = "delete_button"type="button" class="btn btn-secondary">Delete</button>
     </div>
-
-        
-        
-
-
-
-
-        <nav class="navbar fixed-bottom navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Instructor's portal</a>
-            </div>
-        </nav>
+    
         <!----------------------------------------------->
         <!-- JS: Boostrap, Firebase, API related    -->
         <!----------------------------------------------->
@@ -183,9 +197,6 @@
         <!-- JS files: Your own JavaScript functions included here    -->
         <!--------------------------------------------------------------------->
         <script src="scripts/edit_events.js"></script>
-        
-
-
 </body>
 
 
