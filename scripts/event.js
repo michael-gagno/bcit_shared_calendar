@@ -34,21 +34,25 @@ function showEventDetails(eventId) {
 
             let btnComplete = document.getElementById('event-set-complete');
             let btnIncomplete = document.getElementById('event-set-incomplete');
+            let completionText = document.getElementById('event-completed');
 
             if (storage.getItem(eventId)) { 
                 btnComplete.style.display = 'none';
                 btnIncomplete.style.display = 'block';
+                completionText.style.display = 'inline';
             }
 
             btnComplete.addEventListener('click', function(event){
                 storage.setItem(eventId, 'complete');
                 btnComplete.style.display = 'none';
                 btnIncomplete.style.display = 'block';
+                completionText.style.display = 'inline';
             });
             btnIncomplete.addEventListener('click', function(event){
                 storage.removeItem(eventId);
                 btnComplete.style.display = 'block';
                 btnIncomplete.style.display = 'none';
+                completionText.style.display = 'none';
             });
 
             document.getElementById('event-container').style.display = 'block';

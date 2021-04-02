@@ -11,6 +11,11 @@ button#event-set-incomplete {
     display: none;
 }
 
-#event-container {
+div#event-container {
     display: none;
+}
+
+span#event-completed {
+    display: none;
+    color: green;
 }
