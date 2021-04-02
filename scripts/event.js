@@ -4,6 +4,7 @@ let storage = window.localStorage;
 
 
 function showEventDetails(eventId) {
+    if (!eventId) { eventId = "none" };
     let eventInfo = db.collection("events").doc(eventId);
     eventInfo.get().then((doc) => {
         if (doc.exists) {
