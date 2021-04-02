@@ -43,6 +43,7 @@ function showEventDetails(eventId) {
             });
         } else {
             console.log("No such document!");
+            document.getElementById('event-container').style.display = 'none';
         }
     }).catch((error) => {
         console.log("Error getting document:", error);
