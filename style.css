@@ -1,0 +1,21 @@
+/* BCIT COlOURS
+#003c71 BCIT BLue
+#fff234 BCIT Yellow
+#3683f7 BCIT Blue link*/
+
+button#event-set-complete {
+    display: block;
+}
+
+button#event-set-incomplete {
+    display: none;
+}
+
+div#event-container {
+    display: none;
+}
+
+span#event-completed {
+    display: none;
+    color: green;
+}
