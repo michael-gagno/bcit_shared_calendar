@@ -130,3 +130,19 @@ h1{
     float: right;
     margin-right: 30px;
 }
+
+/* admin_assginment_list CSS*/
+
+.assign_list {
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+.data_list {
+    text-align: left;
+}
+
+.inner_container:hover{
+    background-color: rgb(220, 221, 221);
+}
