@@ -62,15 +62,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-#submit{
-    position:  relative;
-    margin-top: 10px;
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin-bottom: auto;
-}
-
 .check_boxes {
     margin-left: 100px;
     margin-right: 100px;
@@ -167,4 +158,10 @@ h1{
     text-align: center;
     width: auto;
     height: auto;
+}
+
+/* NEW CSS */
+
+nav {
+    background-color: #003c71;
 }
