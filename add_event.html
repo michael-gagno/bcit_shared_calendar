@@ -56,8 +56,7 @@
         </div>
     </nav>
 
-    <!-- Add Assignments -->
-
+    <!-- Add Assignments Page -->
     <h1>Add Assignments</h1>
     <div class="textfield_inputs">
         <label for="">Name of Assignment</label>
@@ -65,7 +64,7 @@
             placeholder="Enter the name of the assignment">
     </div>
 
-    <div class="combo_boxes">
+    <div class="combo_boxes"> <!-- Select Course Box -->
         <label for="Course Selection">Select a course</label>
         <select class="form-control" id="select_course">
             <option>COMP 1510</option>
@@ -74,7 +73,7 @@
         </select>
     </div>
 
-    <div class="check_boxes">
+    <div class="check_boxes"> <!-- Select Set Boxes -->
         <label for="set_selection">Select Set(s)</label>
         <br>
         <div class="form-check form-check-inline">
@@ -104,17 +103,17 @@
 
     </div>
 
-    <div class="text_area">
+    <div class="text_area"> <!-- Add Important Links to Event -->
         <label for="url">Enter the link to external resource</label>
         <textarea class="form-control" id="url" rows="3"></textarea>
     </div>
 
-    <div class="text_area_description">
+    <div class="text_area_description"> <!-- Further Descriptions -->
         <label for="url">Enter description</label>
         <textarea class="form-control" id="desc" rows="3"></textarea>
     </div>
 
-    <div class="date_picker">
+    <div class="date_picker"> <!-- Due Date -->
         <label for="date and time picker" class="date_time">Date and time</label>
         <div class="col-10">
             <input class="form-control" type="datetime-local" value="" id="date_time_picker">
@@ -124,8 +123,6 @@
     <div id = "submit">
         <button id="submit_button" type="button" class="btn btn-secondary">Submit</button>
     </div>
-
-
 
         <!----------------------------------------------->
         <!-- JS: Boostrap, Firebase, API related    -->
