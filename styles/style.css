@@ -19,3 +19,114 @@ span#event-completed {
     display: none;
     color: green;
 }
+
+/* add_event.html CSS */
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.textfield_inputs {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.combo_boxes {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.text_area {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.text_area_description {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.date_picker {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.col-10 {
+    padding-left: 0px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    position:  relative;
+    margin-top: 10px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.check_boxes {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+/* edit_event.html CSS */
+
+#btns{
+    text-align: center;
+}
+
+/* add_note.html css */
+h1{
+    text-align: center;
+}
+
+#note_box{
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#text_area{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#submit{
+    position:  relative;
+    margin-top: 30px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
+}
+
+/* add_set_success.html CSS */
+
+#successful_submission{
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#upload_prompt{
+    text-align: center;
+    color: green;
+    font-size:xx-large;
+    font-weight: 500;
+}
+
+#link{
+    float: right;
+    margin-right: 30px;
+}
