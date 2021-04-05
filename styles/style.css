@@ -136,7 +136,6 @@ h1{
 .assign_list {
     text-align: left;
     margin-left: 40px;
-
 }
 
 .data_list {
@@ -145,4 +144,27 @@ h1{
 
 .inner_container:hover{
     background-color: rgb(220, 221, 221);
+}
+
+/* admin.html CSS */
+
+#instructor{
+    text-align: center;
+}
+
+#Instructor_image {
+    margin: auto;
+    height: 100px;
+    width: 140px;
+}
+
+#personal_info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#assignment_buttons {
+    text-align: center;
+    width: auto;
+    height: auto;
 }
