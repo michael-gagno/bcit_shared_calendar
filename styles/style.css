@@ -20,7 +20,7 @@ span#event-completed {
     color: green;
 }
 
-/* add_event.html CSS */
+/* orginal add_event.html CSS */
 
 h1 {
     text-align: center;
@@ -68,13 +68,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* edit_event.html CSS */
+/* orginal edit_event.html CSS */
 
 #btns{
     text-align: center;
 }
 
-/* add_note.html css */
+/* orginal add_note.html css */
 h1{
     text-align: center;
 }
@@ -101,7 +101,7 @@ h1{
     margin-bottom: auto;
 }
 
-/* add_set_success.html CSS */
+/* orginal add_set_success.html CSS */
 
 #successful_submission{
     border: 2px solid black;
@@ -122,7 +122,7 @@ h1{
     margin-right: 30px;
 }
 
-/* admin_assginment_list CSS*/
+/* orginal admin_assginment_list CSS*/
 
 .assign_list {
     text-align: left;
@@ -137,7 +137,7 @@ h1{
     background-color: rgb(220, 221, 221);
 }
 
-/* admin.html CSS */
+/* orginal admin.html CSS */
 
 #instructor{
     text-align: center;
@@ -164,4 +164,20 @@ h1{
 
 nav {
     background-color: #003c71;
+}
+
+.card {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 960px;
+}
+
+.btn {
+    margin: 20px;
+}
+
+.card-header {
+    background-color: #003c71;
+    color: #fff;
 }
