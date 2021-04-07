@@ -19,8 +19,6 @@ function displayCard() {
         .get() //READ asynch
         .then(function (snapcollection) {
             snapcollection.forEach(function (doc) {
-                console.log(doc.data())
-                console.log(doc.data().name);
                 var id = doc.id;
                 var name = doc.data().name;
                 var coursename = doc.data().course_name;
@@ -30,12 +28,13 @@ function displayCard() {
 
                 let assign_list = document.querySelector(".assign_list")
                 let card = document.createElement("div")
+                let mark_as_complete_btn = document.createElement("img")
+
                 let card_body = document.createElement('div')
                 let card_title = document.createElement("h5")
                 let card_subtitle = document.createElement("h6")
                 let due_date = document.createElement("p")
                 let url_link = document.createElement("a")
-                let mark_as_complete_btn = document.createElement("button")
                 let completion_image = document.createElement("img")
 
                 card.setAttribute("class", "card")
@@ -50,6 +49,7 @@ function displayCard() {
                 completion_image.setAttribute("class", "completion-image")
                 completion_image.setAttribute("placeholder", "Task Completed")
                 completion_image.setAttribute("src", "./images/greentick.png")
+                mark_as_complete_btn.setAttribute("src", "./images/mark_as_complete.jpg")
 
 
                 card_title.textContent = name
@@ -64,11 +64,14 @@ function displayCard() {
                 card_body.appendChild(card_subtitle)
                 card_body.appendChild(due_date)
                 card_body.appendChild(url_link)
-                card.appendChild(mark_as_complete_btn)
+                card_body.appendChild(mark_as_complete_btn)
+
+                
                 card_body.appendChild(completion_image)
                 addlistListener(id);
                 
                 let status = localStorage.getItem(id)
+
                 if( status == "complete"){
                     completion_image.style.display = 'block'
                     mark_as_complete_btn.style.display = 'none'
@@ -76,9 +79,7 @@ function displayCard() {
                 else if (status !== "complete"){
                     completion_image.style.display = 'none'
                 }
-
                 mark_as_complete_btn.addEventListener("click", function(event){
-                    console.log("clicked")
                     localStorage.setItem(id, "complete");
                     location.reload();
                 })
@@ -86,7 +87,54 @@ function displayCard() {
             })})}
 
 
+
+function check_due_date(){
+        db.collection("events")
+        .orderBy("due_date")
+            .get() //READ asynch
+            .then(function (snapcollection) {
+                snapcollection.forEach(function (doc) {
+                    //console.log(doc.data())
+                    //console.log(doc.data().name);
+                    
+                    var id = doc.id;
+                    let due_card = document.getElementById(id)
+
+                    var duedate_firebase = doc.data().due_date;
+                    console.log(duedate_firebase);
+                    var cur_date = new Date();
+                    var iso_cur_date = cur_date.toISOString();
+                    console.log(iso_cur_date)
+                    if (iso_cur_date > duedate_firebase){
+                        console.log("The assignment has ended")
+                        due_card.remove();
+                    }
+                    else{
+                        return
+                    }
+                    
+ 
+    
+
+                    
+                })})}
+                
+                
+                
+                
+
+
+
+
+
 displayCard();
+check_due_date();
+window.setTimeout(function () {
+    window.location.reload();
+  }, 300000);
+
+
+
 
 
 
