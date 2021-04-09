@@ -120,13 +120,6 @@ function check_due_date(){
                 })})}
                 
                 
-                
-                
-
-
-
-
-
 displayCard();
 check_due_date();
 window.setTimeout(function () {
