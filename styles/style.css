@@ -203,3 +203,16 @@ nav {
     margin-bottom: 5px; 
     float: right;
 }
+.set-container{
+    text-align: center;
+}
+
+#set-radios{
+    margin-top: 50px;
+}
+
+.save-set{
+    text-align: center;
+}
+
+

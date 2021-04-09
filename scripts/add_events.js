@@ -25,8 +25,7 @@ submit.addEventListener('click', function(event){
         });
     }
     add_events_to_database();
-
-
+    alert("Assignment Uploaded")
 
 })
 

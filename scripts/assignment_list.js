@@ -2,6 +2,8 @@ const assign_list = document.querySelector('.assign_list');
 
 // create elements and rendef events list
 let inner_values = document.getElementsByClassName("inner_list");
+const set_value = localStorage.getItem("set")
+console.log(set_value)
 
 
 function addlistListener(id) {
@@ -15,6 +17,7 @@ function addlistListener(id) {
 
 function displayCard() {
     db.collection("events")
+    .where("set_number", "array-contains", set_value)
     .orderBy("due_date")
         .get() //READ asynch
         .then(function (snapcollection) {
@@ -90,6 +93,7 @@ function displayCard() {
 
 function check_due_date(){
         db.collection("events")
+        .where("set_number", "array-contains", set_value)
         .orderBy("due_date")
             .get() //READ asynch
             .then(function (snapcollection) {
