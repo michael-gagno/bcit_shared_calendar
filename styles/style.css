@@ -137,11 +137,7 @@ h1 {
     background-color: rgb(220, 221, 221);
 }
 
-/* orginal admin.html CSS */
-
-#instructor{
-    text-align: center;
-}
+/* admin.html ids */
 
 #personal_info {
     margin-top: 20px;
@@ -149,7 +145,7 @@ h1 {
 }
 
 #assignment_buttons {
-    text-align: center;
+    margin: auto;
     width: auto;
     height: auto;
 }
@@ -163,11 +159,13 @@ nav {
 /* Header Formatting (Seen at the top of most pages */
 .header {
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #003c71;
     color: #fff;
     width: 90%;
     max-width: 480px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 /* Bootstrap Card Properties */
