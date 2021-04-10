@@ -175,9 +175,44 @@ nav {
 
 .btn {
     margin: 20px;
+    float: right;
 }
 
 .card-header {
     background-color: #003c71;
     color: #fff;
 }
+
+.card-body :hover{
+    cursor: pointer;
+}
+
+.completion-image{
+    width: 50px;
+    float: right;
+    border-radius: 50%;
+
+}
+.mark-as-complete{
+    border-radius: 50%;
+    color:antiquewhite;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;  
+    margin-bottom: 5px; 
+    float: right;
+}
+.set-container{
+    text-align: center;
+}
+
+#set-radios{
+    margin-top: 50px;
+}
+
+.save-set{
+    text-align: center;
+}
+
+

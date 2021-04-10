@@ -30,19 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="calendar_monthly.html">View Calendar</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="assignment_list.html">Assignment List</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="change_set.html">Change Set</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="add_set.html">Add Set</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="settings.html">Settings</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="account.html">Account</a>
@@ -53,6 +44,49 @@
             </ul>
         </div>
     </nav>
+
+    <div class="set-container">
+        <div class="set-heading"><h2>Select you set</h2></div>
+        <div class="form-check" id="set-radios" >
+            <input class="form-check-input" type="radio" name="exampleRadios" id="A" value="A" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              SET A
+            </label>
+          </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="B" value="B">
+            <label class="form-check-label" for="exampleRadios2">
+                SET B
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="C" value="C">
+            <label class="form-check-label" for="exampleRadios2">
+                SET C
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="D" value="D">
+            <label class="form-check-label" for="exampleRadios2">
+                SET D
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="E" value="E">
+            <label class="form-check-label" for="exampleRadios2">
+                SET E
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="F" value="F">
+            <label class="form-check-label" for="exampleRadios2">
+                SET F
+            </label>
+        </div>
+    </div>
+    <div class = "col-md-offset-3 col-md-6">
+        <button type="button" class="btn btn-primary" id="save-set">Save</button>    
+    </div>
 
     <!-- Change Set -->
 
@@ -72,6 +106,7 @@
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
+    <script src="../bcit_shared_calendar/scripts/change_set.js"></script>
 
 </body>
 </html>
