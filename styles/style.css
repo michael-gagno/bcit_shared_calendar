@@ -24,6 +24,9 @@ span#event-completed {
 
 h1 {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -75,9 +78,6 @@ h1 {
 }
 
 /* orginal add_note.html css */
-h1{
-    text-align: center;
-}
 
 #note_box{
     border: 2px solid black;
@@ -143,12 +143,6 @@ h1{
     text-align: center;
 }
 
-#Instructor_image {
-    margin: auto;
-    height: 100px;
-    width: 140px;
-}
-
 #personal_info {
     margin-top: 20px;
     text-align: center;
@@ -160,16 +154,27 @@ h1{
     height: auto;
 }
 
-/* NEW CSS */
+/* Nav Bar Formatting */
 
 nav {
     background-color: #003c71;
 }
 
+/* Header Formatting (Seen at the top of most pages */
+.header {
+    margin: auto;
+    background-color: #003c71;
+    color: #fff;
+    width: 90%;
+    max-width: 480px;
+    border-radius: 25px;
+}
+
+/* Bootstrap Card Properties */
 .card {
     margin: auto;
     margin-top: 50px;
-    width: 80%;
+    width: 90%;
     max-width: 960px;
 }
 
