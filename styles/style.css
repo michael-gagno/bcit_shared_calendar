@@ -136,6 +136,16 @@ h1 {
 .inner_container:hover{
     background-color: rgb(220, 221, 221);
 }
+/* change_set.html ids */
+
+#change-set {
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* admin.html ids */
 
@@ -148,6 +158,9 @@ h1 {
     margin: auto;
     width: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Nav Bar Formatting */
