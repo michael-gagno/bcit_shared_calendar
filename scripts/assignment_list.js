@@ -28,26 +28,28 @@ function displayCard() {
                 var duedate_firebase = doc.data().due_date.split("T");
                 var duedate = "Due On: "+duedate_firebase[0]+ " Time: " + duedate_firebase[1]
                 var link = doc.data().link
-
                 let assign_list = document.querySelector(".assign_list")
                 let card = document.createElement("div")
                 let mark_as_complete_btn = document.createElement("img")
-
                 let card_body = document.createElement('div')
                 let card_title = document.createElement("h5")
                 let card_subtitle = document.createElement("h6")
                 let due_date = document.createElement("p")
                 let url_link = document.createElement("a")
                 let completion_image = document.createElement("img")
+                let image_containers = document.createElement("div")
+                let text_containers = document.createElement("div")
 
                 card.setAttribute("class", "card")
                 card_body.setAttribute("class", "card-body")
-                card_body.setAttribute("id", id)
+                card_body.setAttribute("id", "id"+id)
                 card_title.setAttribute("class", "card-title")
                 card_subtitle.setAttribute("class", "card-subtitle")
                 due_date.setAttribute("class", "card-text")
                 url_link.setAttribute("class", "card-link")
                 url_link.setAttribute("href", link)
+                image_containers.setAttribute("class", "image-containers")
+                text_containers.setAttribute("id", id)
                 mark_as_complete_btn.setAttribute("class", "mark-as-complete")
                 completion_image.setAttribute("class", "completion-image")
                 completion_image.setAttribute("placeholder", "Task Completed")
@@ -63,14 +65,14 @@ function displayCard() {
 
                 assign_list.appendChild(card)
                 card.appendChild(card_body)
-                card_body.appendChild(card_title)
-                card_body.appendChild(card_subtitle)
-                card_body.appendChild(due_date)
-                card_body.appendChild(url_link)
-                card_body.appendChild(mark_as_complete_btn)
-
-                
-                card_body.appendChild(completion_image)
+                card_body.appendChild(text_containers)
+                text_containers.appendChild(card_title)
+                text_containers.appendChild(card_subtitle)
+                text_containers.appendChild(due_date)
+                text_containers.appendChild(url_link)
+                card_body.appendChild(image_containers)
+                image_containers.appendChild(mark_as_complete_btn)
+                image_containers.appendChild(completion_image)
                 addlistListener(id);
                 
                 let status = localStorage.getItem(id)
@@ -84,6 +86,10 @@ function displayCard() {
                 }
                 mark_as_complete_btn.addEventListener("click", function(event){
                     localStorage.setItem(id, "complete");
+                    location.reload();
+                })
+                completion_image.addEventListener("click", function(event){
+                    localStorage.setItem(id, "incomplete");
                     location.reload();
                 })
                 
