@@ -224,5 +224,6 @@ nav {
     height: 60px;
 }
 
-
-
+.admin-page{
+    visibility: hidden;
+}
