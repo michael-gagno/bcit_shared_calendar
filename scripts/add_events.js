@@ -25,6 +25,7 @@ submit.addEventListener('click', function(event){
     }
     catch{
         alert("Please fill all the fields in order to upload the assignment!")
+    
     }
 
 
