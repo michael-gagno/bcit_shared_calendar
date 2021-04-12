@@ -108,7 +108,7 @@ function check_due_date(){
                     //console.log(doc.data().name);
                     
                     var id = doc.id;
-                    let due_card = document.getElementById(id)
+                    let due_card = document.getElementById("id"+id)
 
                     var duedate_firebase = doc.data().due_date;
                     console.log(duedate_firebase);
