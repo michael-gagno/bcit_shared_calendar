@@ -87,6 +87,8 @@ h1 {
 }
 
 #submit{
+    display: flex;
+    justify-content: center;
     position:  relative;
     margin-top: 30px;
     text-align: center;
@@ -254,6 +256,11 @@ nav {
 }
 
 .edit-form {
+    margin: auto;
+    max-width: 960px;
+}
+
+.add-form {
     margin: auto;
     max-width: 960px;
 }

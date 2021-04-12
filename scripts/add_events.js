@@ -20,9 +20,9 @@ submit.addEventListener('click', function(event){
         });
     }
     try{
-        window.location.href = "assignment_list.html"
         add_events_to_database();
         alert("Assignment Uploaded")
+        window.location.href = "assignment_list.html"
     }
     catch{
         alert("Please fill all the fields in order to upload the assignment!")
