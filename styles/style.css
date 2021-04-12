@@ -71,12 +71,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* edit_event.html ids*/
-
-#btns{
-    text-align: center;
-}
-
 /* add_note.html ids */
 
 #note_box{
@@ -251,4 +245,15 @@ nav {
 .completion-buttons {
     display: flex;
     justify-content: center;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-form {
+    margin: auto;
+    max-width: 960px;
 }
