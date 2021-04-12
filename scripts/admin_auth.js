@@ -20,7 +20,6 @@ firebase.auth().onAuthStateChanged(function(user) {
                     document.getElementById("username").innerText = "Welcome, " + username;
                 })
         } else {
-            // Nothing
         }
     });
 }
