@@ -47,18 +47,16 @@
     <br>
 
     <!-- Event Details -->
-    <div class="container-fluid" id="event-container">
-        <h4>Event details</h4>
-        <hr>
-        <h3><span id="event-name-course"></span> - <span id="event-name"></span> <span id="event-completed">[COMPLETED]</span></h3>
-        <p id="event-description"></p>
-        <br>
-        <h5 id="event-due">Due: </h5>
-        <hr>
+    <h1 class="header">Event details</h1>
+    <div class="card" id="event-container">
+        <div class="card-body">
+        <h5 class="card-header"><span id="event-name-course"></span> - <span id="event-name"></span> <span id="event-completed">[COMPLETED]</span></h5>
+        <p class="card-text" id="event-description"></p>
+        <h6 id="event-due">Due: </h6>
         <a id="event-url"><div id="event-links"></div></a>
-        <br>
         <button type="button" class="btn btn-primary" id="event-set-complete">Set to Complete</button>
         <button type="button" class="btn btn-danger" id="event-set-incomplete">Set to Incomplete</button>
+        </div>
     </div>
 
     <!----------------------------------------------->
