@@ -199,6 +199,10 @@ nav {
     color: #fff;
 }
 
+.card-text {
+    padding-top: 5px;
+}
+
 .card-body :hover{
     cursor: pointer;
 }
@@ -227,19 +231,24 @@ nav {
     margin-top: 50px;
 }
 
-.save-set{
+.save-set {
     text-align: center;
 }
 
-.image-containers{
+.image-containers {
     height: 60px;
 }
 
-.admin-page{
+.admin-page {
     visibility: hidden;
 }
 
 .admin-greeting {
+    display: flex;
+    justify-content: center;
+}
+
+.completion-buttons {
     display: flex;
     justify-content: center;
 }
