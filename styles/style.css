@@ -238,3 +238,8 @@ nav {
 .admin-page{
     visibility: hidden;
 }
+
+.admin-greeting {
+    display: flex;
+    justify-content: center;
+}
