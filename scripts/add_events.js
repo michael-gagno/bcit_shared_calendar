@@ -22,7 +22,7 @@ submit.addEventListener('click', function(event){
     try{
         add_events_to_database();
         alert("Assignment Uploaded")
-        window.location.href = "./admin.html"
+        // window.location.href = "./admin.html"
     }
     catch{
         alert("Please fill all the fields in order to upload the assignment!")
