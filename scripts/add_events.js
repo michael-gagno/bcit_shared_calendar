@@ -1,11 +1,12 @@
 let submit = document.getElementById('submit_button');
-submit.addEventListener('click', function(event){
-    let name_of_assignment = document.querySelector('input[type = name]').value
-    let course = document.querySelector('.combo_boxes select').value
+
+submit.addEventListener('click', function (event) {
+    let name_of_assignment = document.querySelector('input[type = name]').value;
+    let course = document.querySelector('.combo_boxes select').value;
     let set = get_checkboxes();
-    let url = document.getElementById('url').value
-    let date_time = document.getElementById('date_time_picker').value
-    let desc = document.getElementById("desc").value
+    let url = document.getElementById('url').value;
+    let date_time = document.getElementById('date_time_picker').value;
+    let desc = document.getElementById("desc").value;
 
 
     function add_events_to_database() {
@@ -19,30 +20,30 @@ submit.addEventListener('click', function(event){
             description: desc
         });
     }
-    try{
+    try {
         add_events_to_database();
-        alert("Assignment Uploaded")
+        alert("Assignment Uploaded");
         // window.location.href = "./admin.html"
     }
-    catch{
-        alert("Please fill all the fields in order to upload the assignment!")
-    
+    catch {
+        alert("Please fill all the fields in order to upload the assignment!");
+
     }
 
 
 })
 
 
-function get_checkboxes(){
+function get_checkboxes() {
     let values = []
     var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
     for (var i = 0; i < checkboxes.length; i++) {
         values.push(checkboxes[i].value)
-      }
-    if (values.length == 0){
+    }
+    if (values.length == 0) {
         return
     }
-    else{
+    else {
         return values
     }
 

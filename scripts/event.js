@@ -36,19 +36,19 @@ function showEventDetails(eventId) {
             let btnIncomplete = document.getElementById('event-set-incomplete');
             let completionText = document.getElementById('event-completed');
 
-            if (storage.getItem(eventId)) { 
+            if (storage.getItem(eventId)) {
                 btnComplete.style.display = 'none';
                 btnIncomplete.style.display = 'block';
                 completionText.style.display = 'inline';
             }
 
-            btnComplete.addEventListener('click', function(event){
+            btnComplete.addEventListener('click', function (event) {
                 storage.setItem(eventId, 'complete');
                 btnComplete.style.display = 'none';
                 btnIncomplete.style.display = 'block';
                 completionText.style.display = 'inline';
             });
-            btnIncomplete.addEventListener('click', function(event){
+            btnIncomplete.addEventListener('click', function (event) {
                 storage.removeItem(eventId);
                 btnComplete.style.display = 'block';
                 btnIncomplete.style.display = 'none';
